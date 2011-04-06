@@ -288,7 +288,7 @@ class PMMail(object):
         if not self.__api_key:
             raise PMMailMissingValueException('Cannot send an e-mail without a Postmark API Key')
         elif not self.__sender:
-            raise PMMailMissingValueException('Cannot send an e-mail without a sender (.from field)')
+            raise PMMailMissingValueException('Cannot send an e-mail without a sender (.sender field)')
         elif not self.__to:
             raise PMMailMissingValueException('Cannot send an e-mail without at least one recipient (.to field)')
         elif not self.__subject:
